@@ -1,0 +1,24 @@
+.layout {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ticket {
+  width: 600px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 20px 0;
+}
+
+.alert {
+  justify-content: center;
+  font-size: 30px;
+  display: flex;
+}

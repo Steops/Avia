@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.flight_cards {
+  width: 600px;
+}
+.button {
+  width: 600px;
+  padding: 10px 0px;
+  background-color: rgb(255, 153, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button__show {
+  width: 600px;
+  padding: 10px 0px;
+  background-color: rgb(0, 206, 130);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 15px;
+  background-color: rgb(53, 106, 205);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.flight__price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+}
+.flight__arrow {
+  width: 30px;
+  height: 9px;
+}
+.flight__priceDescription {
+  font-size: 12px;
+}
+.flightThere {
+  &__city {
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+
+  &__uid {
+    color: rgb(53, 106, 205);
+  }
+}
+
+.flight {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gold {
+  color: yellow;
+}
+.crossed {
+  text-decoration: line-through;
+  color: #fff;
+  margin-left: 7px;
+}
+.period {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  color: rgb(53, 106, 205);
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.transfer {
+  align-self: center;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.transfer_number {
+  display: inline-block;
+  position: relative;
+  color: rgb(255, 153, 0);
+}
+
+.transfer_number:before,
+.transfer_number:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: rgb(194, 163, 163);
+}
+
+.transfer_number:before {
+  right: 100%;
+  left: -1000%;
+}
+
+.transfer_number:after {
+  left: 100%;
+  right: -1000%;
+}
